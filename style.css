@@ -8,29 +8,36 @@
 	font-size: 13px;
 }
 .find {
+	display: inline-block;
+	width: 80%;
 	padding-top: 40px;
 	margin-left: 10%;
-	width: 80%;
+	vertical-align: middle;
 }
 [type="search"] {
+	display: inline-block;
 	position: relative;
+	box-sizing: border-box;
+	font-size: 90px;
 	border: none;
 	color: #EC5A62;
 	background-color: #F1F1F1;
 	height: 110px;
-	font-size: 90px;
-	width: 95%;
+	width: 100%;
+	padding-right: 90px;
 }
 input[type="submit"] {
+	display: inline-block;
 	position: absolute;
 	width: 80px;
 	height: 80px;
-	background: url('img/magnifier.svg');
 	font-size: 0;
 	cursor: pointer;
 	border: 0;
 	top: 55px;
 	right: 10%;
+	background: url('img/magnifier.svg');
+	vertical-align: middle;
 	transform-origin: right center;
 }
 input[type="submit"]:hover {
@@ -43,6 +50,10 @@ input[type="submit"]:hover {
 input::-webkit-input-placeholder { color: #c2c2c2; }
 input::-moz-placeholder { color: #c2c2c2; }
 input:focus { outline: none; }
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button,
+input::-webkit-search-results-button,
+input::-webkit-search-results-decoration { display: none; }
 body {
 	background-color: #F1F1F1;
 }
@@ -53,9 +64,9 @@ li {
 	background-color: rgba(118, 117, 128, 0.05);
 	margin-bottom: 3.5px;
 	margin-top: 3.5px;
-	text-align: left;
-	border-radius: 5px;
 	height: 75px;
+	border-radius: 5px;
+	text-align: left;
 }
 li:hover {
 	background-color: rgba(118, 117, 128, 0.1);
@@ -65,10 +76,12 @@ li:hover span {
 }
 .info {
 	box-sizing: border-box;
-	margin-left: 10%;
+	display: inline-block;
 	width: 80%;
-	text-align: center;
+	margin-left: 10%;
 	margin-top: 40px;
+	text-align: center;
+	vertical-align: top;
 }
 .people, .popular, .recent {
 	box-sizing: border-box;
@@ -91,17 +104,17 @@ h1 {
 	color: #c2c2c2;
 }
 a {
+	box-sizing: border-box;
 	display: block;
 	width: 100%;
 	height: 100%;
 	text-decoration: none;
 	padding: 10px;
-	box-sizing: border-box;
 }
 img {
 	box-sizing: border-box;
-	margin-right: 10px;
 	display: inline;
+	margin-right: 10px;
 	vertical-align: middle;
 }
 span {
