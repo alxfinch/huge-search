@@ -9,8 +9,10 @@
 <body>
 	<header>
 		<div class="find">
-			<input type="search" name="searching" placeholder="Search...">
-			<input type="submit">
+			<form id="searching" method="post">
+				<input type="search" required name="q" placeholder="Search..." alt="Search" form="searching">
+				<input type="submit" alt="OK" form="searching">
+			</form>
 		</div>
 	</header>
 	<main>
